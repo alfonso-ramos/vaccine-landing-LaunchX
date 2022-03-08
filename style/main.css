@@ -24,7 +24,7 @@ body{
 }
 /* Globales */
 .container{
-    max-width: 120rem;
+    max-width: 130rem;
     width: 90%;
     margin: 0 auto;
 }
@@ -33,10 +33,10 @@ a{
     color: var(--Grey);
 }
 h1{
-    font-size: 4.8rem;
+    font-size: 6rem;
 }
 h2{
-    font-size: 3rem;
+    font-size: 4rem;
 }
 h1, h2{
     color: var(--DarkBlue);
@@ -73,6 +73,7 @@ header{
 header .logo{
     font-weight: bold;
     color: var(--Blue);
+    font-size: 2rem;
 }
 .header-nav ul{
     display: flex;
@@ -83,9 +84,10 @@ header .header-nav ul li{
     color: var(--Grey);
 }
 .main-button{
-    background-color: var(--Blue);
+    background: rgb(8,152,230);
+    background: linear-gradient(90deg, rgba(8,152,230,1) 0%, rgba(46,107,220,1) 100%);
     color: white;
-    padding: 1rem 2rem;
+    padding: 1.5rem 2.5rem;
     border-radius: 0.5rem;
 }
 /* Seccion del main */
@@ -108,11 +110,53 @@ main .landing-view{
     font-weight: bold;
 }
 .landing-view--img{
-    background-color: var(--SkyBlue);
+    background: rgb(8,152,230);
+    background: linear-gradient(90deg, rgba(8,152,230,1) 0%, rgba(46,107,220,1) 100%);
 }
 
 /* Schedule section */
-.schedule--float ul{
+.schedule-info-container{
     display: flex;
-    gap: 2rem;
+    align-items: center;
+    gap: 15rem;
+    -webkit-box-shadow: 13px 10px 50px -26px #000000; 
+    box-shadow: 13px 10px 50px -26px #000000;
+}
+/* Vaccine brands */
+.vaccine-brands ul{
+    display: flex;
+    margin: 10rem 0;
+    justify-content: center;
+    align-items: center;
+    gap: 10rem;
+}
+.vaccine-brands ul li img{
+    width: 20rem;
+}
+/* Reasons section */
+.reasons p{
+    line-height: 3rem;
+}
+.benefits-container{
+    display: flex;
+    justify-content: space-between;
+}
+/* Preparations section */
+.preparations{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10rem;
+}
+.preparations-img{
+    background: rgb(8,152,230);
+    background: linear-gradient(90deg, rgba(8,152,230,1) 0%, rgba(46,107,220,1) 100%);
+}
+.preparations-info p{
+    line-height: 3rem;
+}
+.preparations-info ul{
+    margin-top: 8rem;
+}
+.preparations ul li{
+    margin: 4rem 0;
 }

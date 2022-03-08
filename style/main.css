@@ -1,5 +1,12 @@
 :root {
     /* Agrega las fuentes aqui */
+    --font: 'Roboto', sans-serif;
+
+    --DarkBlue:#1f3e72;
+    --SkyBlue:#118fe4;
+    --Blue:#3151cf;
+    --SoftBlue:#eef3ff;
+    --Grey:#828ea3;
 }
 html{
     box-sizing: border-box;
@@ -11,36 +18,41 @@ html{
     box-sizing: inherit;
 }
 body{
-    font-family: /*Agrega la fuente de prefenecia*/;
+    font-family: var(--font);
     font-size: 1.6rem;
     line-height: 2rem;
 }
 /* Globales */
-/* .container{
+.container{
     max-width: 120rem;
     width: 90%;
     margin: 0 auto;
-} */
+}
 a{
     text-decoration: none;
-}
-h1,h2,h3,h4{
-    font-family: /*Agrega la variable de feunte de preferencia*/;
+    color: var(--Grey);
 }
 h1{
     font-size: 4.8rem;
 }
 h2{
-    font-size: 4rem;
+    font-size: 3rem;
 }
-h3{
-    font-size: 3.2rem;
+h1, h2{
+    color: var(--DarkBlue);
 }
-h4{
-    font-size: 2.8rem;
+p{
+    color: var(--Grey);
 }
 img{
     max-width: 100%;
+}
+li{
+    list-style: none;
+}
+.bold{
+    font-weight: bold;
+    color: var(--DarkBlue);
 }
 /* Utilities */
 .no-margin{
@@ -51,4 +63,56 @@ img{
 }
 .text-center{
     text-align: center;
+}
+/* Header section */
+header{
+    display: flex;
+    justify-content: space-between;
+    padding: 3rem 0;
+}
+header .logo{
+    font-weight: bold;
+    color: var(--Blue);
+}
+.header-nav ul{
+    display: flex;
+    gap: 2rem;
+}
+header .header-nav ul li{
+    list-style: none;
+    color: var(--Grey);
+}
+.main-button{
+    background-color: var(--Blue);
+    color: white;
+    padding: 1rem 2rem;
+    border-radius: 0.5rem;
+}
+/* Seccion del main */
+main .landing-view{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+.landing-view--info h1{
+    line-height: 6rem;
+}
+.landing-view--info p{
+    line-height: 2.5rem;
+}
+.landing-view--benefits ul{
+    margin-top: 4rem;
+    display: flex;
+    gap: 4rem;
+    list-style: none;
+    color: var(--Grey);
+    font-weight: bold;
+}
+.landing-view--img{
+    background-color: var(--SkyBlue);
+}
+
+/* Schedule section */
+.schedule--float ul{
+    display: flex;
+    gap: 2rem;
 }

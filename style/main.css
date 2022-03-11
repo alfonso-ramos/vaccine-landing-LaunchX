@@ -7,7 +7,7 @@
     --Blue:#3151cf;
     --SoftBlue:#eef3ff;
     --Grey:#828ea3;
-    --Yellow: yellow;
+    --Yellow: #fffae7;
 }
 html{
     box-sizing: border-box;
@@ -145,6 +145,18 @@ main .landing-view{
     -webkit-box-shadow: 13px 10px 50px -26px #000000; 
     box-shadow: 13px 10px 50px -26px #000000;
 }
+.schedule-icon{
+    background-color: var(--SoftBlue);
+    width: 3rem;
+    height: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0.5rem;
+}
+.schedule-icon img{
+    width: 1.5rem;
+}
 /* Vaccine brands */
 .vaccine-brands ul{
     display: flex;
@@ -163,6 +175,18 @@ main .landing-view{
 .benefits-container{
     display: flex;
     justify-content: space-between;
+}
+.benefit-icon{
+    background-color: var(--SoftBlue);
+    width: 4.5rem;
+    height: 4.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0.5rem;
+}
+.benefit-icon img{
+    width: 3rem;
 }
 /* Preparations section */
 .preparations{
@@ -193,6 +217,18 @@ main .landing-view{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 3rem;
+}
+.contact-icon{
+    background-color: var(--SoftBlue);
+    width: 4.5rem;
+    height: 4.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0.5rem;
+}
+.contact-icon img{
+    width: 2.5rem;
 }
 .contacts-img{
     background: rgb(8,152,230);

@@ -7,6 +7,7 @@
     --Blue:#3151cf;
     --SoftBlue:#eef3ff;
     --Grey:#828ea3;
+    --Yellow: yellow;
 }
 html{
     box-sizing: border-box;
@@ -107,13 +108,30 @@ main .landing-view{
 .landing-view--info p{
     line-height: 2.5rem;
 }
-.landing-view--benefits ul{
+.landing-view--benefits{
     margin-top: 4rem;
     display: flex;
     gap: 4rem;
     list-style: none;
     color: var(--Grey);
     font-weight: bold;
+}
+.benefits{
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+.benefit-img-container{
+    background-color: var(--Yellow);
+    width: 3rem;
+    height: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 0.5rem;
+}
+.benefit-img{
+    width: 1.5rem;
 }
 .landing-view--img{
     background: rgb(8,152,230);

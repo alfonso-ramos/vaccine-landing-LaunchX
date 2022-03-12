@@ -145,6 +145,11 @@ main .landing-view{
     -webkit-box-shadow: 13px 10px 50px -26px #000000; 
     box-shadow: 13px 10px 50px -26px #000000;
 }
+.schedule-info{
+    display: flex;
+    gap: 2rem;
+    padding: 3rem 0 2.5rem 3rem;
+}
 .schedule-icon{
     background-color: var(--SoftBlue);
     width: 3rem;
@@ -193,10 +198,13 @@ main .landing-view{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 10rem;
+    margin: 15rem 0;
 }
 .preparations-img{
     background: rgb(8,152,230);
     background: linear-gradient(90deg, rgba(8,152,230,1) 0%, rgba(46,107,220,1) 100%);
+    display: flex;
+    align-items: center;
 }
 .preparations-info p{
     line-height: 3rem;
@@ -206,9 +214,14 @@ main .landing-view{
 }
 .preparations ul li{
     margin: 4rem 0;
+    list-style: circle;
 }
 
 /* contact section */
+.emergency-contact .text{
+    line-height: 3rem;
+    padding-bottom: 3rem;
+}
 .get-contact{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -233,6 +246,11 @@ main .landing-view{
 .contacts-img{
     background: rgb(8,152,230);
     background: linear-gradient(90deg, rgba(8,152,230,1) 0%, rgba(46,107,220,1) 100%);
+    height: 50rem;
+}
+.contacts-img img{
+    width: 50rem;
+    margin: 8rem 7rem;
 }
 /* footer section */
 footer{

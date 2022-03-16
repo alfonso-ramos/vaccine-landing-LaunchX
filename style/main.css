@@ -41,6 +41,7 @@ h2{
 }
 h1, h2{
     color: var(--DarkBlue);
+    line-height: 6rem;
 }
 p{
     color: var(--Grey);
@@ -67,8 +68,11 @@ li{
 }
 /* Header section */
 header{
+    text-align: center;
+}
+.header-nav ul{
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
     padding: 3rem 0;
 }
 .logo{
@@ -98,12 +102,12 @@ header .header-nav ul li{
     border-radius: 0.5rem;
 }
 /* Seccion del main */
-main .landing-view{
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-}
-.landing-view--info h1{
-    line-height: 6rem;
+
+@media (min-width: 768px){
+    main .landing-view{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
 }
 .landing-view--info p{
     line-height: 2.5rem;
@@ -137,13 +141,20 @@ main .landing-view{
     background: rgb(8,152,230);
     background: linear-gradient(90deg, rgba(8,152,230,1) 0%, rgba(46,107,220,1) 100%);
 }
+
 /* Schedule section */
 .schedule-info-container{
-    display: flex;
-    align-items: center;
-    gap: 15rem;
-    -webkit-box-shadow: 13px 10px 50px -26px #000000; 
-    box-shadow: 13px 10px 50px -26px #000000;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+@media (min-width: 768px){
+    .schedule-info-container{
+        display: flex;
+        align-items: center;
+        gap: 15rem;
+        -webkit-box-shadow: 13px 10px 50px -26px #000000; 
+        box-shadow: 13px 10px 50px -26px #000000;
+    }
 }
 .schedule-info{
     display: flex;
@@ -178,8 +189,14 @@ main .landing-view{
     line-height: 3rem;
 }
 .benefits-container{
-    display: flex;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+@media (min-width: 768px){
+    .benefits-container{
+        display: flex;
+        justify-content: space-between;
+    }
 }
 .benefit-icon{
     background-color: var(--SoftBlue);
@@ -194,11 +211,13 @@ main .landing-view{
     width: 3rem;
 }
 /* Preparations section */
-.preparations{
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 10rem;
-    margin: 15rem 0;
+@media (min-width: 768px){
+    .preparations{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10rem;
+        margin: 15rem 0;
+    }
 }
 .preparations-img{
     background: rgb(8,152,230);
@@ -222,9 +241,11 @@ main .landing-view{
     line-height: 3rem;
     padding-bottom: 3rem;
 }
-.get-contact{
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
+@media (min-width: 768px){
+    .get-contact{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
 }
 .contacts-container{
     display: grid;
@@ -250,7 +271,6 @@ main .landing-view{
 }
 .contacts-img img{
     width: 50rem;
-    margin: 8rem 7rem;
 }
 /* footer section */
 footer{
